@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
+
 /**
- * main - this is a C program that prints a line to the standard error
- * Return 1 when sucessful
+ * main - emtry point
+ *
+ * Description - this is a C program that prints a line to the standard error
+ *
+ * Return: 1 when sucessful
  */
 int main(void)
 {
