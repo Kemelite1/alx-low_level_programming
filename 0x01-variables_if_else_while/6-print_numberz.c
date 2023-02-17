@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
- * main - entry point
- * description - this is a program that prints single digit numbers
+ * main - main function
  *
- * Returrn: 0 when successful
+ * Return: 0 when successful
  */
 int main(void)
 {
