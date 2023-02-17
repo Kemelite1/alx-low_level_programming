@@ -4,8 +4,7 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - this is a program that will assign a random number to the variable n each time it is executed
- *
+ * main - this is a program that will assign a random number to the variable n
  * Return: 0 when successful
  */
 int main(void)
