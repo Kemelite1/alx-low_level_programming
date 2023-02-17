@@ -4,11 +4,10 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - This program will assign a random number to the variable n each time it is executed and print whether it is positive or negative
+ * main - this is a program that will assign a random number to the variable n each time it is executed
  *
  * Return: 0 when successful
  */
-
 int main(void)
 {
 	int n;
