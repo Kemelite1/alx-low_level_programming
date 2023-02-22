@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - main function
- *
+ * main - this is the main function
  * Return: 0 when successful
  */
 int main(void)
@@ -20,5 +19,4 @@ int main(void)
 	}
 	printf("%d\n", sum);
 	return (0);
-
 }
