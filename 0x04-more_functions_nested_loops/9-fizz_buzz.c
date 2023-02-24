@@ -10,7 +10,7 @@ int main(void)
 {
 	int m;
 
-	for (m = 1; m <= 100; m++)
+	for (m = 1 ; m <= 100 ; m++)
 	{
 		if (m % 3 == 0 && m % 5 != 0)
 		{
@@ -20,7 +20,7 @@ int main(void)
 			printf(" Buzz");
 		} else if (m % 3 == 0 && m % 5 == 0)
 		{
-			printf("FizzBuzz");
+			printf(" FizzBuzz");
 		} else if (m == 1)
 		{
 			printf("%d", m);
