@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rest_to_98 - a function that takes an int as parameter
+ * reset_to_98 - a function that takes an int as parameter
  * @n:parameter to be printed
  * Return: n
  */
