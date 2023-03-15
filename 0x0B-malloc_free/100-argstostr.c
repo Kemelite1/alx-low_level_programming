@@ -10,37 +10,40 @@
  */
 char *argstostr(int ac, char **av)
 {
-	int row, column, len = 0, total_len = 0;
-	char *str;
+	char *str, *s;
+	int i, j, k, len = 0;
 
 	if (ac == 0 || av == NULL)
+	return (NULL);
 
-		return (NULL);
-
-	for (row = 0; row < ac; row++)
+	for (i = 0; i < ac; i++)
 	{
-		len = strlen(av[row]);
+	s = av[i];
+	j = 0;
 
-		total_len += len + 1;
+	while (s[j++])
+	len++;
+	len++;
 	}
 
-	str = (char *) malloc(total_len * sizeof(char));
-
+	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
+	return (NULL);
 
-		return (NULL);
-
-	len = 0;
-
-	for (row = 0; row < ac; row++)
+	for (i = 0, j = 0; i < ac && j < len; i++)
 	{
-		for (column = 0; av[row][column] != '\0'; column++)
-		{
-			str[len++] = av[row][column];
-		}
-		str[len++] = '\n';
+	s = av[i];
+	k = 0;
+
+	while (s[k])
+	{
+	str[j] = s[k];
+	k++;
+	j++;
 	}
-	str[len] = '\0';
+	str[j++] = '\n';
+	}
+	str[j] = '\0';
 
 	return (str);
 }
