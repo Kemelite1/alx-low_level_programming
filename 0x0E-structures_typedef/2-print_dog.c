@@ -1,6 +1,3 @@
-#ifndef STRUCTDOG_H
-#define STRUCTDOG_H
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
