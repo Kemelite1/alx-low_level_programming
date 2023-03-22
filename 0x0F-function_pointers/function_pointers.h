@@ -1,7 +1,6 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
-#include <stdef.h>
 #include <stdio.h>
 
 int _putchar(char c);
