@@ -2,16 +2,16 @@
 #include "main.h"
 int main(void)
 {
-	FILE *fpointer;
+	FILE *fp;
 	char filename[] = "Hol\4";
 
-	fpointer = fopen("101-password", "w");
-	if (fpointer == NULL)
+	fp = fopen("101-password", "w");
+	if (fp == NULL)
 	{
 		printf("unable to open file: %s\n", filename);
 		return (1);
 	}
-	fputs(filename, fpointer);
-	fclose(fpointer);
+	fputs(filename, fp);
+	fclose(fp);
 	return (0);
 }
