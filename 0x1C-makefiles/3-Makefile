@@ -1,0 +1,19 @@
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+# file deletion program
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) *~ $(NAME)
+# rule to remove object files
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean # Rule to remove all generated files and temporary files
+# Rule to force recompilation of all source files
+re: fclean all
